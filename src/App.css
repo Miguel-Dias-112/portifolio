@@ -1,38 +1,191 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #F5F5F5;
+  opacity: 0.8;
+  background-image: radial-gradient(#BEBEBE 0.8px, #F5F5F5 0.8px);
+  background-size: 16px 16px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 0%;
+  padding: 0%;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+ 
+
+
+
+@media (max-width: 3000px){
+  .App header{
+    width: calc(100% - 40px);
+    height: 60px;
+    text-align: left;
+    display: flex;
+    background: black;
+    box-shadow: 0px 10px 5px gainsboro;
+    z-index: 99;
+      display: flex;
+  
+    color: whitesmoke;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 40px;
+    flex-direction: column;
+    
+    font-size: 36px;
+  }
+  .SobreMim  {
+    width: 100%;
+    height: calc(100vh - 60px);
+    background-color: #F5F5F5;
+    opacity: 0.8;
+    background-image: radial-gradient(#BEBEBE 0.8px, #F5F5F5 0.8px);
+    background-size: 16px 16px;
+    align-items: center;
+    box-shadow: 0px 10px 15px #919191;
+  
+    justify-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display:flex;
+    flex-direction: row;
+  }
+  .SobreMim .Categorias{
+    width: 100%;
+    height: 100%;
+  
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+  }
+  .SobreMim  .Categorias h1{
+ 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+    font-size: 60px;
+    z-index: 9999;
+    text-align: left;
+    justify-content: flex-start;
+  }
+  .SobreMim .Perfil{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 10px;
+  
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+  }
+  .SobreMim .Perfil .nome{
+    width: 350px;
+    display: flex;
+    align-self: center;
+    text-align: left;
+    font-size: 60px;
+    color: #F96B04;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #d15904;
+    margin-bottom: 5px;
+    justify-content: center;
+  }
+  .SobreMim .Perfil .description{
+    width: 350px;
+    text-align: left;
+    display: flex;
+    align-self: center;
+    color: #0483F9;
+    font-size: 20px;
+  
+    justify-content: center;
+  }
+}
+@media (max-width: 900px){
+  .SobreMim{  
+    flex-direction: column;
+
+  }
+  .SobreMim .Categorias{
+    border-top: 5px solid black;
+
+  }
+}
+@media (max-width: 600px){
+  .App header{
+    width:100%;
+    position: fixed;
+    height: 60px;
+    text-align: left;
+    display: flex;
+    background: black;
+    box-shadow: 0px 0px 0px red;
+    z-index: 99;
+      display: flex;
+  
+    color: whitesmoke;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0px;
+    flex-direction: column;
+    
+    font-size: 25px;
+  }
+  .SobreMim{  
+    margin-top: 60px;
+    flex-direction: column;
+  }
+  .SobreMim .Categorias{
+    border-top: 1px solid black;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .SobreMim  .Categorias h1{
+    width: 80%;
+    text-align: center;
+
+    font-size: 30px;;
+  }
+ 
+  .SobreMim .Perfil .nome{
+    width: 80%;
+    display: flex;
+    align-self: center;
+    text-align: left;
+    font-size: 30px;
+    color: #F96B04;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #d15904;
+    margin-bottom: 5px;
+    justify-content: center;
+  }
+  .SobreMim .Perfil .description{
+    width: 350px;
+    text-align: left;
+    display: flex;
+    align-self: center;
+    color: #0483F9;
+    font-size: 20px;
+  
+    justify-content: center;
+  }
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+
+
+
+
+
+
+.App footer {
+  width: 100%;
+  height: 400px;
+  background-color: #3b414d;
+  pointer-events: none;
 }
