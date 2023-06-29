@@ -31,7 +31,7 @@
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     
     }
-    .projetos div{
+    .projetos_container{
         max-width: 1300px;
     
         width: 80%;
@@ -43,14 +43,7 @@
         justify-content:center;
         flex-wrap: wrap;
     }
-    .projetos div div{
-        z-index: 999;
-        width: 200px;
-        height:200px;
-        border-radius: 27px;
-        margin-bottom: 0px;
-        background-color:whitesmoke   ;
-    }
+    
 }
 @media (max-width: 600px){
     .projetos{
@@ -91,24 +84,5 @@
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     
     }
-    .projetos div{
-        max-width: 1300px;
     
-        width: 80%;
-        height: fit-content ;
-        background-color: none;
-        display: flex;
-        align-items: center;
-        gap: 26px;
-        justify-content:center;
-        flex-wrap: wrap;
-    }
-    .projetos div div{
-        z-index: 999;
-        width: 100%;
-        height: 250px;
-        border-radius: 27px;
-        margin-bottom: 0px;
-        background-color:whitesmoke   ;
-    }
 }

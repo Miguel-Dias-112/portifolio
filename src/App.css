@@ -138,7 +138,7 @@
     flex-direction: column;
   }
   .SobreMim .Categorias{
-    border-top: 1px solid black;
+    border-top: 0px solid black;
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -146,6 +146,11 @@
   .SobreMim  .Categorias h1{
     width: 80%;
     text-align: center;
+    border-radius:5px;
+    color: white;
+    background-color: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
 
     font-size: 30px;;
   }
@@ -155,10 +160,10 @@
     display: flex;
     align-self: center;
     text-align: left;
-    font-size: 30px;
+    font-size: 35px;
     color: #F96B04;
     -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #d15904;
+    -webkit-text-stroke-color: #F96B04;
     margin-bottom: 5px;
     justify-content: center;
   }

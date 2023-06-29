@@ -1,5 +1,5 @@
 import React from 'react';
-
+import '../divisões/certificações.css'
 
 class Certificação extends React.Component {
 
@@ -26,8 +26,9 @@ class Certificação extends React.Component {
     }
   render(){
     return(    
-    <div  onClick={()=>this.handleClick(this.props.link)}>
-      {this.props.nome}
+    <div className='certificação'  onClick={()=>this.handleClick(this.props.link)}>
+      {this.props.nome+" ➚"}
+      
     </div>
   )
 

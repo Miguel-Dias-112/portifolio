@@ -4,12 +4,13 @@ import Projeto from './Componentes/Projeto';
 import Certificação from './Componentes/Certificações';
 import Habilidades from './Componentes/Habilidades';
 
+
 import './divisões/projetos.css';
 import './divisões/certifacados.css';
 import './divisões/certificações.css';
 
 class App extends React.Component {
-
+  
     constructor() {
         super();
         this.state = {
@@ -41,11 +42,12 @@ class App extends React.Component {
             }
           });
     }
-    projetos_factory(nome,descrição,link){
+    projetos_factory(nome,descrição,link,tecnologias){
         let projeto = {
             nome: nome,
             descrição:descrição,
-            link:link}
+            link:link,
+            tecnologias:tecnologias}
         return projeto
         
     }
@@ -76,13 +78,24 @@ class App extends React.Component {
     }
     componentDidMount(){
         this.desce_tela()
+        let t={
+            Js:'https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png',
+            React:'https://gitlab.com/uploads/-/system/project/avatar/31182514/logo-react-icon.png',
+            Firebase:'https://www.gstatic.com/devrel-devsite/prod/vca930ea4481fa25f3cdb030ae8a063116e499d7117ac90e4ee9a28c6c1a44870/firebase/images/touchicon-180.png',
+            Electron:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyUlH8MWdOtI4pwmwqfb9YIc95y0btX68iwl5p_vK7HA&s',
+            Kotlin:'https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Kotlin_Icon.svg/1200px-Kotlin_Icon.svg.png',
+            Mysql:'https://w7.pngwing.com/pngs/840/355/png-transparent-mysql-workbench-database-management-system-mariadb-database-miscellaneous-blue-marine-mammal.png',
+            Chatgptapi:'https://img.uxwing.com/wp-content/themes/uxwing/download/brands-social-media/chatgpt-icon.png',
+            Retrofit:'https://api.nuget.org/v3-flatcontainer/square.retrofit2/2.7.2/icon',
+        }
+
         let _projetos=[
-            this.projetos_factory("mindmap web","teste","https://github.com/Miguel-Dias-112/mindmap"),
-            this.projetos_factory("notas desktop","teste","https://github.com/Miguel-Dias-112/Notes-Desktop"),
-            this.projetos_factory("notas mobile","teste","https://github.com/Miguel-Dias-112/Notas-Mobile"),
-            this.projetos_factory("penknife","teste","teste"),
-            this.projetos_factory("swot analisys","teste","https://github.com/Miguel-Dias-112/Swot"),
-            this.projetos_factory("Portifolio","teste","https://github.com/Miguel-Dias-112/Portifolio"),
+            this.projetos_factory("mindmap web","website(spa), feito em react para criação e manipulação de mapas mentais","https://github.com/Miguel-Dias-112/mindmap",[t['React'],t['Js']]),
+            this.projetos_factory("notas desktop","App desktop windows, feito em react para notas adesivas na lateral da tela do usuario","https://github.com/Miguel-Dias-112/Notes-Desktop",[t['Js'],t['Firebase'],t['React'],t['Electron']]),
+            this.projetos_factory("notas mobile","App mobile kotlin, para criação e manipulação de notas offline via mysql com room","https://github.comhttps://gitlab.com/uploads/-/system/project/avatar/31182514/logo-react-icon.png/Miguel-Dias-112/Notas-Mobile",[t['Kotlin'],t['Mysql']]),
+            this.projetos_factory("penknife","App mobile kotlin, voltado pra produtividade, conta com lembretes agendados, pomodoro, integração com chatgpt entre outra features","teste",[t['Kotlin'],t['Mysql'],t['Firebase'],t['Chatgptapi'],t['Retrofit']]),
+            this.projetos_factory("swot analisys","website, para criação e plotagem de analises swots, consumindo api de autenticação e store do firebase","https://github.com/Miguel-Dias-112/Swot",[t['Js'],t['React'],t['Firebase']]),
+            this.projetos_factory("Portifolio","codigo fonte deste portifolio, feito com react","https://github.com/Miguel-Dias-112/Portifolio",[t['Js'],t['React']]),
 
 
         ]
@@ -140,17 +153,17 @@ class App extends React.Component {
             <h1 id='a'>
                 projetos
             </h1>
-            <div>
-                { this.state.projetos.map( (projeto) => <Projeto link={projeto.link} nome={projeto.nome}></Projeto>) }
+            <div className='projetos_container'>
+                { this.state.projetos.map( (projeto) => <Projeto link={projeto.link} descrição={projeto.descrição}nome={projeto.nome} tecnologias={projeto.tecnologias}></Projeto>) }
             </div>
             <h1 id='b'>
                 certificações
             </h1>
-            <div>
+            <div className='certificações_container'>
                 { this.state.certificações.map( (certificação) => <Certificação link={certificação.link} nome={certificação.nome}></Certificação>) }
             </div>
             
-            <div>
+            <div className='projetos_container'>
                  { this.state.habilidades.map( (habilidade) => <Habilidades nome={habilidade.nome}></Habilidades>) }
    
             </div>
