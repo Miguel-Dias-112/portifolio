@@ -92,9 +92,9 @@ class App extends React.Component {
         let _projetos=[
             this.projetos_factory("mindmap web","website(spa), feito em react para criação e manipulação de mapas mentais","https://github.com/Miguel-Dias-112/mindmap",[t['React'],t['Js']]),
             this.projetos_factory("notas desktop","App desktop windows, feito em react para notas adesivas na lateral da tela do usuario","https://github.com/Miguel-Dias-112/Notes-Desktop",[t['Js'],t['Firebase'],t['React'],t['Electron']]),
-            this.projetos_factory("notas mobile","App mobile kotlin, para criação e manipulação de notas offline via mysql com room","https://github.comhttps://gitlab.com/uploads/-/system/project/avatar/31182514/logo-react-icon.png/Miguel-Dias-112/Notas-Mobile",[t['Kotlin'],t['Mysql']]),
-            this.projetos_factory("penknife","App mobile kotlin, voltado pra produtividade, conta com lembretes agendados, pomodoro, integração com chatgpt entre outra features","teste",[t['Kotlin'],t['Mysql'],t['Firebase'],t['Chatgptapi'],t['Retrofit']]),
-            this.projetos_factory("swot analisys","website, para criação e plotagem de analises swots, consumindo api de autenticação e store do firebase","https://github.com/Miguel-Dias-112/Swot",[t['Js'],t['React'],t['Firebase']]),
+            this.projetos_factory("notas mobile","App mobile kotlin, para criação e manipulação de notas offline via mysql com room","https://github.com/Miguel-Dias-112/Notas-Mobile",[t['Kotlin'],t['Mysql']]),
+            this.projetos_factory("penknife","App mobile kotlin, voltado pra produtividade, conta com lembretes agendados, pomodoro, integração com chatgpt entre outra features","https://github.com/Miguel-Dias-112/Penknife",[t['Kotlin'],t['Mysql'],t['Firebase'],t['Chatgptapi'],t['Retrofit']]),
+            this.projetos_factory("swot analisys","website, para criação e plotagem de analises swots, consumindo api de dodoautenticação e store do firebase","https://github.com/Miguel-Dias-112/Swot",[t['Js'],t['React'],t['Firebase']]),
             this.projetos_factory("Portifolio","codigo fonte deste portifolio, feito com react","https://github.com/Miguel-Dias-112/Portifolio",[t['Js'],t['React']]),
 
 
