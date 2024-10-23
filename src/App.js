@@ -3,8 +3,9 @@ import React from 'react';
 import Projeto from './Componentes/Projeto';
 import Certificação from './Componentes/Certificações';
 import Habilidades from './Componentes/Habilidades';
-
-
+import ReactIcon from './react.png'
+import ElectronIcon from './electron.png'
+import FirebaseIcon from './firebase.png'
 import './divisões/projetos.css';
 import './divisões/certifacados.css';
 import './divisões/certificações.css';
@@ -86,9 +87,9 @@ class App extends React.Component {
         this.desce_tela()
         let t={
             Js:'https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png',
-            React:'https://gitlab.com/uploads/-/system/project/avatar/31182514/logo-react-icon.png',
-            Firebase:'https://www.gstatic.com/devrel-devsite/prod/vca930ea4481fa25f3cdb030ae8a063116e499d7117ac90e4ee9a28c6c1a44870/firebase/images/touchicon-180.png',
-            Electron:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyUlH8MWdOtI4pwmwqfb9YIc95y0btX68iwl5p_vK7HA&s',
+            React:ReactIcon,
+            Firebase:FirebaseIcon,
+            Electron:ElectronIcon,
             Kotlin:'https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Kotlin_Icon.svg/1200px-Kotlin_Icon.svg.png',
             Mysql:'https://w7.pngwing.com/pngs/840/355/png-transparent-mysql-workbench-database-management-system-mariadb-database-miscellaneous-blue-marine-mammal.png',
             Chatgptapi:'https://img.uxwing.com/wp-content/themes/uxwing/download/brands-social-media/chatgpt-icon.png',
@@ -96,12 +97,18 @@ class App extends React.Component {
         }
 
         let _projetos=[
+
             this.projetos_factory("mindmap web","website(spa), feito em react para criação e manipulação de mapas mentais","https://github.com/Miguel-Dias-112/mindmap",[t['React'],t['Js']]),
-            this.projetos_factory("notas desktop","App desktop windows, feito em react para notas adesivas na lateral da tela do usuario","https://github.com/Miguel-Dias-112/Notes-Desktop",[t['Js'],t['Firebase'],t['React'],t['Electron']]),
-            this.projetos_factory("notas mobile","App mobile kotlin, para criação e manipulação de notas offline via mysql com room","https://github.com/Miguel-Dias-112/Notas-Mobile",[t['Kotlin'],t['Mysql']]),
-            this.projetos_factory("penknife","App mobile kotlin, voltado pra produtividade, conta com lembretes agendados, pomodoro, integração com chatgpt entre outra features","https://github.com/Miguel-Dias-112/Penknife",[t['Kotlin'],t['Mysql'],t['Firebase'],t['Chatgptapi'],t['Retrofit']]),
+            this.projetos_factory(
+                "game profiles identifier",
+                "Web App feito em React, para identificar perfis de jogadores mais adequados para determinado jogo. Foi um trabalho de pesquisa realizado dentro de um projeto de extensã baseado em pesquisas da quanticfoundry",
+                "https://game-profiles-identifier.vercel.app/",
+                [t['Js'],t['React']]),
+            this.projetos_factory("penknife","App mobile kotlin, voltado pra produtividade, conta com lembretes agendados, pomodoro, integração com chatgpt entre outra features","https://github.com/Miguel-Dias-112/Penknife",[t['Kotlin'],t['Mysql'],t['Firebase'],t['Retrofit']]),
             this.projetos_factory("swot analisys","website, para criação e plotagem de analises swots, consumindo api de dodoautenticação e store do firebase","https://github.com/Miguel-Dias-112/Swot",[t['Js'],t['React'],t['Firebase']]),
+            this.projetos_factory("notas mobile","App mobile kotlin, para criação e manipulação de notas offline via mysql com room","https://github.com/Miguel-Dias-112/Notas-Mobile",[t['Kotlin'],t['Mysql']]),
             this.projetos_factory("Portifolio","codigo fonte deste portifolio, feito com react","https://github.com/Miguel-Dias-112/Portifolio",[t['Js'],t['React']]),
+            this.projetos_factory("notas desktop","App desktop windows, feito em react para notas adesivas na lateral da tela do usuario","https://github.com/Miguel-Dias-112/Notes-Desktop",[t['Js'],t['Firebase'],t['React'],t['Electron']]),
 
 
         ]
