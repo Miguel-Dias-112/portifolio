@@ -104,12 +104,14 @@ class App extends React.Component {
                 "Web App feito em React, para identificar perfis de jogadores mais adequados para determinado jogo. Foi um trabalho de pesquisa realizado dentro de um projeto de extensã baseado em pesquisas da quanticfoundry",
                 "https://game-profiles-identifier.vercel.app/",
                 [t['Js'],t['React']]),
+                this.projetos_factory("Jogo da Bugalha","Recriação do minigame do jogo Cult of The Lamb","https://ufjf-dcc202.github.io/JogoDaBugalha/",[t['Js']]),
+                this.projetos_factory("swot analisys","website, para criação e plotagem de analises swots, consumindo api de do autenticação e store do firebase","https://github.com/Miguel-Dias-112/Swot",[t['Js'],t['React'],t['Firebase']]),
+
             this.projetos_factory("penknife","App mobile kotlin, voltado pra produtividade, conta com lembretes agendados, pomodoro, integração com chatgpt entre outra features","https://github.com/Miguel-Dias-112/Penknife",[t['Kotlin'],t['Mysql'],t['Firebase'],t['Retrofit']]),
-            this.projetos_factory("swot analisys","website, para criação e plotagem de analises swots, consumindo api de do autenticação e store do firebase","https://github.com/Miguel-Dias-112/Swot",[t['Js'],t['React'],t['Firebase']]),
             this.projetos_factory("notas mobile","App mobile kotlin, para criação e manipulação de notas offline via mysql com room","https://github.com/Miguel-Dias-112/Notas-Mobile",[t['Kotlin'],t['Mysql']]),
-            this.projetos_factory("Portifolio","codigo fonte deste portifolio, feito com react","https://github.com/Miguel-Dias-112/Portifolio",[t['Js'],t['React']]),
             this.projetos_factory("notas desktop","App desktop windows, feito em react para notas adesivas na lateral da tela do usuario","https://github.com/Miguel-Dias-112/Notes-Desktop",[t['Js'],t['Firebase'],t['React'],t['Electron']]),
 
+            this.projetos_factory("Portifolio","codigo fonte deste portifolio, feito com react","https://github.com/Miguel-Dias-112/Portifolio",[t['Js'],t['React']]),
 
         ]
         let _certificações=[
